@@ -1,0 +1,10 @@
+18:00:25.651 [main] INFO  stepDefenations.FC_Test_StepDeffination - User is on Firecompass login page
+18:00:30.912 [main] INFO  stepDefenations.FC_Test_StepDeffination - Entered in-valid username and password
+18:00:31.009 [main] INFO  stepDefenations.FC_Test_StepDeffination - entred login button
+18:00:41.053 [main] INFO  stepDefenations.FC_Test_StepDeffination - application should display error promt
+18:01:13.913 [main] INFO  stepDefenations.FC_Test_StepDeffination - User is on Firecompass login page
+18:01:19.129 [main] INFO  stepDefenations.FC_Test_StepDeffination - Entered in-valid username and password
+18:01:19.241 [main] INFO  stepDefenations.FC_Test_StepDeffination - entred login button
+18:01:39.282 [main] ERROR stepDefenations.FC_Test_StepDeffination - failed to application display error promt
+14:14:59.991 [main] INFO  stepDefenations.FC_Test_StepDeffination - User is on Firecompass login page
+14:15:05.620 [main] INFO  stepDefenations.FC_Test_StepDeffination - Entered in-valid username and password

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="56202" started-at="2020-07-10T11:15:29Z" finished-at="2020-07-10T11:16:25Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@1e67a849]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Log-in functions" duration-ms="56202" started-at="2020-07-10T11:15:29Z" finished-at="2020-07-10T11:16:25Z">
+      <class name="runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@1e67a849]" name="setUpClass" is-config="true" duration-ms="218" started-at="2020-07-10T16:45:29Z" finished-at="2020-07-10T16:45:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@1e67a849]" name="feature" duration-ms="55894" started-at="2020-07-10T16:45:29Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-07-10T16:46:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Log-in functions]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@1e67a849]" name="tearDownClass" is-config="true" duration-ms="26" started-at="2020-07-10T16:46:25Z" finished-at="2020-07-10T16:46:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Log-in functions -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,60 @@
+package resources;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Base {
+	
+	public static Logger log=LogManager.getLogger(Base.class.getName());
+	
+	
+	public static WebDriver driver;
+	public Properties prop;
+
+	public WebDriver initializeDriver() throws IOException {
+		
+		  prop=new Properties();
+		 FileInputStream fis=new FileInputStream(System.getProperty("C:\\Users\\Malempati Parvathi\\eclipse-workspace\\E2Eproject\\src\\main\\java\\resources\\data,properties"));
+		 
+		 prop.load(fis);
+		 String browserName=prop.getProperty("browser");
+		 
+		 if(browserName.equals("chrome")) {
+			 //execute chrome browser
+			 System.setProperty("webdriver.chrome.driver",System.getProperty("C:\\Users\\Malempati Parvathi\\eclipse-workspace\\E2Eproject\\drivers\\chromedriver.exe"));
+			 
+				 driver=new ChromeDriver();
+			 
+			 
+		 }else if(browserName.equals("fireFox")) {
+			 //execute FireFox browser
+			 System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"\\drivers\\geckodriver.exe");			
+				 driver=new FirefoxDriver();
+				
+			 
+			 
+		 }
+		 driver.manage().window().maximize();
+		 driver.manage().deleteAllCookies();
+		 driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
+		 return driver;
+			
+		}
+	public void getScreenshot(String result) throws IOException {
+		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		File to=new File(System.getProperty("user.dir")+"\\Screenshots\\"+result+"_Screenshot.png");
+		org.openqa.selenium.io.FileHandler.copy(src, to);
+	}
+	
+		 
+}

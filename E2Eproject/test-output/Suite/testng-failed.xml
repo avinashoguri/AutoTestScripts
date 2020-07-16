@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <listeners>
+    <listener class-name="com.base_pkg.org.Listeners"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test name="Validation_Title(failed)" parallel="none">
+    <classes>
+      <class name="com.base_pkg.org.Validation_NavigationBar">
+        <methods>
+          <include name="initilize"/>
+        </methods>
+      </class> <!-- com.base_pkg.org.Validation_NavigationBar -->
+      <class name="com.base_pkg.org.HomePage">
+        <methods>
+          <include name="initilize"/>
+        </methods>
+      </class> <!-- com.base_pkg.org.HomePage -->
+      <class name="com.base_pkg.org.Validation_Title">
+        <methods>
+          <include name="initilize"/>
+          <include name="validationTitle"/>
+        </methods>
+      </class> <!-- com.base_pkg.org.Validation_Title -->
+    </classes>
+  </test> <!-- Validation_Title(failed) -->
+  <test name="Validation_NavigationBar(failed)" parallel="none">
+    <classes>
+      <class name="com.base_pkg.org.Validation_NavigationBar">
+        <methods>
+          <include name="initilize"/>
+          <include name="validationTitle"/>
+        </methods>
+      </class> <!-- com.base_pkg.org.Validation_NavigationBar -->
+      <class name="com.base_pkg.org.HomePage">
+        <methods>
+          <include name="initilize"/>
+        </methods>
+      </class> <!-- com.base_pkg.org.HomePage -->
+      <class name="com.base_pkg.org.Validation_Title">
+        <methods>
+          <include name="initilize"/>
+        </methods>
+      </class> <!-- com.base_pkg.org.Validation_Title -->
+    </classes>
+  </test> <!-- Validation_NavigationBar(failed) -->
+  <test name="HomePage(failed)" parallel="none">
+    <classes>
+      <class name="com.base_pkg.org.Validation_NavigationBar">
+        <methods>
+          <include name="initilize"/>
+        </methods>
+      </class> <!-- com.base_pkg.org.Validation_NavigationBar -->
+      <class name="com.base_pkg.org.HomePage">
+        <methods>
+          <include name="basepageNavigation"/>
+          <include name="initilize"/>
+        </methods>
+      </class> <!-- com.base_pkg.org.HomePage -->
+      <class name="com.base_pkg.org.Validation_Title">
+        <methods>
+          <include name="initilize"/>
+        </methods>
+      </class> <!-- com.base_pkg.org.Validation_Title -->
+    </classes>
+  </test> <!-- HomePage(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,9 @@
+Feature: Applocation Login
+
+Scenario: Login page check
+Given : User is on "http://www.qaclickacademy.com/" login page
+And : click on login link
+When : User login with "test99@gmail.com" and "123456"
+Then :Home page is populated 
+
+

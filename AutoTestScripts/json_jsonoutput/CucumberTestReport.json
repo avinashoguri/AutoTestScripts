@@ -1,0 +1,128 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Login with in-valid credentials",
+        "description": "",
+        "id": "log-in-functions;login-with-in-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17276733400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Firecompass login page",
+            "match": {
+              "location": "FC_Test_StepDeffination.user_is_on_firecompass_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5254447900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter invalid username and password",
+            "match": {
+              "location": "FC_Test_StepDeffination.enter_invalid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 81148900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "enter login button",
+            "match": {
+              "location": "FC_Test_StepDeffination.enter_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10040781700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "application should display error promt",
+            "match": {
+              "location": "FC_Test_StepDeffination.application_should_display_error_promt()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Login with correct username and in-correct password",
+        "description": "",
+        "id": "log-in-functions;login-with-correct-username-and-in-correct-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12264358800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User is on Firecompass login page",
+            "match": {
+              "location": "FC_Test_StepDeffination.user_is_on_firecompass_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5251247800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "enter valid username and invalid password",
+            "match": {
+              "location": "FC_Test_StepDeffination.enter_valid_username_and_invalid_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 121612300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "enter login button",
+            "match": {
+              "location": "FC_Test_StepDeffination.enter_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20087838400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "application should display error promt",
+            "match": {
+              "location": "FC_Test_StepDeffination.application_should_display_error_promt()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Log-in functions",
+    "description": "",
+    "id": "log-in-functions",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/FC_Test.feature"
+  }
+]

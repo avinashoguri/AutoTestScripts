@@ -1,0 +1,13 @@
+Feature: Applocation Login
+
+Scenario: Home page login
+Given : User is on netbanking login page
+When : User login with "jim" and "123"
+Then :Home page is populated 
+And : cards are displayed "True"
+
+Scenario: Home page login
+Given : User is on netbanking login page
+When : User login with "kim" and "321"
+Then :Home page is populated 
+And : cards are displayed "False"

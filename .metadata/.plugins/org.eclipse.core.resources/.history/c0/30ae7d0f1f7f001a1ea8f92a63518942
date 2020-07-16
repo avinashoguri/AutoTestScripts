@@ -1,0 +1,36 @@
+package stepDefenations;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.And;
+import cucumber.api.junit.Cucumber;
+import resources.Base;
+
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+public class StepDefenation extends Base{
+	
+
+	    @Given("^: User is on \"([^\"]*)\" login page$")
+	    public void _user_is_on_something_login_page(String strArg1) throws Throwable {
+	    	driver=initializeDriver();
+	    }
+
+	    @When("^: User login with \"([^\"]*)\" and \"([^\"]*)\"$")
+	    public void _user_login_with_something_and_something(String strArg1, String strArg2) throws Throwable {
+	       
+	    }
+
+	    @Then("^:Home page is populated $")
+	    public void home_page_is_populated() throws Throwable {
+	    
+	    }
+
+	    @And("^: click on login link$")
+	    public void _click_on_login_link() throws Throwable {
+	      
+	    }
+
+	}
